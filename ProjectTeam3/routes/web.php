@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,3 +18,5 @@ Route::get('logout', [AuthController::class, 'showLogoutForm'])->name('logout');
 
 // Rute untuk menangani proses logout
 Route::post('logout', [AuthController::class, 'logout']);
+=======
+Route::post('login', [AuthController::class, 'login']);
