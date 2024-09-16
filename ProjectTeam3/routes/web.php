@@ -20,3 +20,8 @@ Route::get('logout', [AuthController::class, 'showLogoutForm'])->name('logout');
 Route::post('logout', [AuthController::class, 'logout']);
 =======
 Route::post('login', [AuthController::class, 'login']);
+
+//Rute untuk menampilkan halaman Awal
+Route::get('/', function () {
+    return view('home');
+});
